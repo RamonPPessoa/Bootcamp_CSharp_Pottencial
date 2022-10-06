@@ -1,7 +1,25 @@
-﻿using ExemploFundamentos.Models;
+﻿
+using ExemploFundamentos.Models;
 
-Pessoa pessoa1 = new Pessoa();
 
-pessoa1.Nome = "João";
-pessoa1.Idade = 18;
-pessoa1.Apresentar();
+string apresentacao = "Hello, welcome";
+
+int quantidade = 3;
+ double altura = 1.84;
+
+ decimal preco = 1.50M;
+ bool condicao = true;
+
+ Console.WriteLine( apresentacao);
+ Console.WriteLine("Quantidade:" + quantidade);
+ Console.WriteLine("Altura: " + altura.ToString("0.00"));
+ Console.WriteLine("Preço: " + preco);
+ Console.WriteLine("Condição: " + condicao);
+
+
+
+// Pessoa pessoa1 = new Pessoa();
+
+// pessoa1.Nome = "João";
+// pessoa1.Idade = 18;
+// pessoa1.Apresentar();
