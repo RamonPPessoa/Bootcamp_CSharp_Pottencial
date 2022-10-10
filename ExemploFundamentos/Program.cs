@@ -3,9 +3,15 @@ using ExemploFundamentos.Models;
 
 
 
+// cast implicito
+ int a = int.MaxValue;
+ long b = a;
 
-int inteiro = 5;
-string a = inteiro.ToString();
+ Console.WriteLine(b);
+
+
+// int inteiro = 5;
+// string a = inteiro.ToString();
 
 // Casting convertesndo tipos de variáveis
 
