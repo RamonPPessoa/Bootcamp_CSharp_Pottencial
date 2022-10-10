@@ -3,14 +3,21 @@ using ExemploFundamentos.Models;
 
 
 
-int a = 10;
-int b = 5;
+// Casting convertesndo tipos de variáveis
 
-int c = a + b;
+//int a = Convert.ToInt32("10"); o convert aceita null
 
-c +=5;
+int a = int.Parse("5"); // o Parse não aceita null
+Console.WriteLine(a);
 
-Console.WriteLine(  c);
+// int a = 10;
+// int b = 5;
+
+// int c = a + b;
+
+// c +=5;
+
+// Console.WriteLine(  c);
 // DateTime dataAtual = DateTime.Now;
 
 // System.Console.WriteLine(dataAtual);
