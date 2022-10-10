@@ -3,12 +3,16 @@ using ExemploFundamentos.Models;
 
 
 
+
+int inteiro = 5;
+string a = inteiro.ToString();
+
 // Casting convertesndo tipos de variáveis
 
 //int a = Convert.ToInt32("10"); o convert aceita null
 
-int a = int.Parse("5"); // o Parse não aceita null
-Console.WriteLine(a);
+// int a = int.Parse("5"); // o Parse não aceita null
+// Console.WriteLine(a);
 
 // int a = 10;
 // int b = 5;
