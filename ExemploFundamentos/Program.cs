@@ -3,11 +3,20 @@ using ExemploFundamentos.Models;
 
 
 
-// cast implicito
- int a = int.MaxValue;
- long b = a;
+// convertendo de maneira segura
 
- Console.WriteLine(b);
+string a = "15-";
+
+int.TryParse(a,out int b);
+Console.WriteLine(b);
+Console.WriteLine("Sucesso");
+
+
+// cast implicito
+//  int a = int.MaxValue;
+//  long b = a;
+
+//  Console.WriteLine(b);
 
 
 // int inteiro = 5;
