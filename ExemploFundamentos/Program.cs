@@ -2,30 +2,55 @@
 using ExemploFundamentos.Models;
 
 
+// switch case
+
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+
+switch (letra)
+{
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("É uma vogal");
+
+    
+    default:
+    Console.WriteLine("Não é vogal");
+    break;
+}
+
+
+
+
+
+
 
 // Operador Condicional
 
-int qtdEstoque = 20;
-int qtdCompra = 15;
-bool venda = qtdCompra > 0  && qtdEstoque > = qtdCompra;
+// int qtdEstoque = 20;
+// int qtdCompra = 15;
+// bool venda = qtdCompra > 0  && qtdEstoque > = qtdCompra;
 
-Console.WriteLine($"Quantidade no estoque:  {qtdEstoque}");
-Console.WriteLine($"Quantidade de compra:  {qtdCompra}");
-Console.WriteLine($"Realizar venda? {venda}");
+// Console.WriteLine($"Quantidade no estoque:  {qtdEstoque}");
+// Console.WriteLine($"Quantidade de compra:  {qtdCompra}");
+// Console.WriteLine($"Realizar venda? {venda}");
 
-if (qtdCompra ==0)
-{
+// if (qtdCompra ==0)
+// {
     
-}
+// }
 
-else if (venda)
-{
-   Console.WriteLine("Venda efetuada"); 
-}
-else
-{
-    Console.WriteLine("Produto esgotado no estoque");
-}
+// else if (venda)
+// {
+//    Console.WriteLine("Venda efetuada"); 
+// }
+// else
+// {
+//     Console.WriteLine("Produto esgotado no estoque");
+// }
 
 
 
