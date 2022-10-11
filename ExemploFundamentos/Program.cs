@@ -2,18 +2,37 @@
 using ExemploFundamentos.Models;
 
 
-bool presenca = true;
+bool chove = false;
+bool pelaTarde = false;
+
+if (!chove && !pelaTarde )
+{bool presenca = true;
 double media = 7.5;
 
 if (presenca && media >=7)
 {
-    Console.WriteLine("Sucesso");
+    Console.WriteLine("Vou caminhar");
 }
 
 else
 {
-    Console.WriteLine("Ficou");
+    Console.WriteLine("Caminhar outro dia");
 }
+    
+}
+
+// bool presenca = true;
+// double media = 7.5;
+
+// if (presenca && media >=7)
+// {
+//     Console.WriteLine("Sucesso");
+// }
+
+// else
+// {
+//     Console.WriteLine("Ficou");
+// }
 
 // bool maiorIdade = false;
 // bool autorizadoResponsavel = false;
