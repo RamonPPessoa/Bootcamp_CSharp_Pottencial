@@ -1,18 +1,32 @@
 ﻿
 using ExemploFundamentos.Models;
 
-bool maiorIdade = false;
-bool autorizadoResponsavel = false;
 
+bool presenca = true;
+double media = 7.5;
 
-if (maiorIdade || autorizadoResposnvael)
+if (presenca && media >=7)
 {
-    Console.WriteLine("Liberado");
+    Console.WriteLine("Sucesso");
 }
+
 else
 {
-    Console.WriteLine("Não liberado");
+    Console.WriteLine("Ficou");
 }
+
+// bool maiorIdade = false;
+// bool autorizadoResponsavel = false;
+
+
+// if (maiorIdade || autorizadoResposnvael)
+// {
+//     Console.WriteLine("Liberado");
+// }
+// else
+// {
+//     Console.WriteLine("Não liberado");
+// }
 // switch case
 
 // Console.WriteLine("Digite uma letra");
