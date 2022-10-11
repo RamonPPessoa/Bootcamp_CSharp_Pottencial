@@ -7,15 +7,18 @@ using ExemploFundamentos.Models;
 
 int qtdEstoque = 20;
 int qtdCompra = 15;
-bool venda = qtdEstoque >= qtdEstoque;
+bool venda = qtdCompra > 0  && qtdEstoque > = qtdCompra;
 
 Console.WriteLine($"Quantidade no estoque:  {qtdEstoque}");
 Console.WriteLine($"Quantidade de compra:  {qtdCompra}");
 Console.WriteLine($"Realizar venda? {venda}");
 
+if (qtdCompra ==0)
+{
+    
+}
 
-
-if (venda)
+else if (venda)
 {
    Console.WriteLine("Venda efetuada"); 
 }
