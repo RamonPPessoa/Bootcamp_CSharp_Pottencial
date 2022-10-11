@@ -3,13 +3,39 @@ using ExemploFundamentos.Models;
 
 
 
+// Operador Condicional
+
+int qtdEstoque = 20;
+int qtdCompra = 15;
+bool venda = qtdEstoque >= qtdEstoque;
+
+Console.WriteLine($"Quantidade no estoque:  {qtdEstoque}");
+Console.WriteLine($"Quantidade de compra:  {qtdCompra}");
+Console.WriteLine($"Realizar venda? {venda}");
+
+
+
+if (venda)
+{
+   Console.WriteLine("Venda efetuada"); 
+}
+else
+{
+    Console.WriteLine("Produto esgotado no estoque");
+}
+
+
+
+
+
+
 // convertendo de maneira segura
 
-string a = "15-";
+// string a = "15-";
 
-int.TryParse(a,out int b);
-Console.WriteLine(b);
-Console.WriteLine("Sucesso");
+// int.TryParse(a,out int b);
+// Console.WriteLine(b);
+// Console.WriteLine("Sucesso");
 
 
 // cast implicito
