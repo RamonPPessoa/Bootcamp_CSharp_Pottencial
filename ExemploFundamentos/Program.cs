@@ -1,26 +1,37 @@
 ﻿
 using ExemploFundamentos.Models;
 
+bool maiorIdade = false;
+bool autorizadoResponsavel = false;
 
+
+if (maiorIdade || autorizadoResposnvael)
+{
+    Console.WriteLine("Liberado");
+}
+else
+{
+    Console.WriteLine("Não liberado");
+}
 // switch case
 
-Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine();
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
 
-switch (letra)
-{
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("É uma vogal");
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("É uma vogal");
 
     
-    default:
-    Console.WriteLine("Não é vogal");
-    break;
-}
+//     default:
+//     Console.WriteLine("Não é vogal");
+//     break;
+// }
 
 
 
