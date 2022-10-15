@@ -2,9 +2,84 @@
 using ExemploFundamentos.Models;
 
 
-Calculadora calc = new Calculadora();
 
-calc.Potencia(3,2);
+int numero = 5;
+int contadorNovo =0;
+ 
+
+for (int contador = 0; contador <=10; contador++)
+{
+    Console.WriteLine($"{numero} x {contador} = {numero  * contador}"  );
+}
+
+
+System.Console.WriteLine("============================ While=========================");
+
+while (contadorNovo <=10)
+{
+    Console.WriteLine($"{contadorNovo} Execução: {numero} x {contadorNovo} = {numero  * contadorNovo}"  );
+    contadorNovo++;
+}
+Console.WriteLine("=============== DO WHILE =============");
+
+
+int soma=0, numeroNovo=0;
+do
+{
+    System.Console.WriteLine("Digite um numero(0 para sair)");
+    numeroNovo = Convert.ToInt32(Console.ReadLine());
+
+    soma +=numeroNovo;
+} while (numeroNovo!=0);
+System.Console.WriteLine($"A soma dos numeros digitados e:{soma}");
+
+
+Console.WriteLine("======================MENU==============================");
+
+string opcao;
+
+while (true)
+{
+    Console.Clear();
+    Console.WriteLine("Escolha uma opção");
+    Console.WriteLine("Cadastrar");
+    Console.WriteLine("Buscar");
+    Console.WriteLine("Apagar");
+    Console.WriteLine("Encerrar");
+
+    opcao = Console.ReadLine();
+    switch (opcao)
+    {
+        case "1":
+            Console.WriteLine("Cadastrar");
+            break;
+
+        case "2":
+         Console.WriteLine("Buscar");
+            break;
+
+        case "3":
+             Console.WriteLine("Apager");
+            break;
+
+        case "4":
+             Console.WriteLine("Encerrar");
+             Environment.Exit(0);
+            break;
+
+        
+        default:
+         Console.WriteLine("Opcao Inválida");
+            break;
+    }
+}
+
+
+
+
+// Calculadora calc = new Calculadora();
+
+// calc.Potencia(3,2);
 
 // calc.Somar(5,5);
 
