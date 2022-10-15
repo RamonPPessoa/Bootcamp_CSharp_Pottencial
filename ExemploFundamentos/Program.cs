@@ -2,24 +2,28 @@
 using ExemploFundamentos.Models;
 
 
-bool chove = false;
-bool pelaTarde = false;
+Calculadora calc = new Calculadora();
 
-if (!chove && !pelaTarde )
-{bool presenca = true;
-double media = 7.5;
+calc.Somar(5,5);
 
-if (presenca && media >=7)
-{
-    Console.WriteLine("Vou caminhar");
-}
+// bool chove = false;
+// bool pelaTarde = false;
 
-else
-{
-    Console.WriteLine("Caminhar outro dia");
-}
+// if (!chove && !pelaTarde )
+// {bool presenca = true;
+// double media = 7.5;
+
+// if (presenca && media >=7)
+// {
+//     Console.WriteLine("Vou caminhar");
+// }
+
+// else
+// {
+//     Console.WriteLine("Caminhar outro dia");
+// }
     
-}
+// }
 
 // bool presenca = true;
 // double media = 7.5;
