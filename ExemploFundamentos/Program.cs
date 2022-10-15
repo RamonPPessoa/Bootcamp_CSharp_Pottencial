@@ -4,7 +4,9 @@ using ExemploFundamentos.Models;
 
 Calculadora calc = new Calculadora();
 
-calc.Somar(5,5);
+calc.Potencia(3,2);
+
+// calc.Somar(5,5);
 
 // bool chove = false;
 // bool pelaTarde = false;
