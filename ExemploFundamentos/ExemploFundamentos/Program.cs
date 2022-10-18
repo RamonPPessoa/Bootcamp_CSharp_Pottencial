@@ -7,19 +7,26 @@ arrayInteiros[0]= 100;
 arrayInteiros[1] = 200;
 arrayInteiros[2]=300;
 
+
+Array.Resize(ref arrayInteiros,arrayInteiros.Length *2);
+
 for (int contador = 0; contador < arrayInteiros.Length; contador++)
 {
     Console.WriteLine($"Posicao Nº {contador} - {arrayInteiros[contador]}");
 }
 
 
-System.Console.WriteLine("Array usando foreach");
-int contadorForeach = 0;
-foreach (var item in collection)
-{
-    System.Console.WriteLine($"Posicao {contadorForeach} -  {item}");
-    contadorForeach++;
-}
+
+
+
+
+// System.Console.WriteLine("Array usando foreach");
+// int contadorForeach = 0;
+// foreach (var item in collection)
+// {
+//     System.Console.WriteLine($"Posicao {contadorForeach} -  {item}");
+//     contadorForeach++;
+// }
 
 
 // Pessoa p1 = new Pessoa();
