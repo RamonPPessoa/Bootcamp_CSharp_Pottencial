@@ -13,6 +13,15 @@ for (int contador = 0; contador < arrayInteiros.Length; contador++)
 }
 
 
+System.Console.WriteLine("Array usando foreach");
+int contadorForeach = 0;
+foreach (var item in collection)
+{
+    System.Console.WriteLine($"Posicao {contadorForeach} -  {item}");
+    contadorForeach++;
+}
+
+
 // Pessoa p1 = new Pessoa();
 // p1.Nome="Pessoa";
 // p1.Idade=43;
