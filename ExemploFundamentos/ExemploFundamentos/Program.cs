@@ -2,22 +2,60 @@
 using ExemploFundamentos.Common.Models;
 
 
-int[] arrayInteiros = new int[3];
-arrayInteiros[0]= 100;
-arrayInteiros[1] = 200;
-arrayInteiros[2]=300;
 
+List<string>listaString = new List<string>();
+listaString.Add("AM");
+listaString.Add("AC");
+listaString.Add("SP");
+listaString.Add("Manaus");
 
-int[] arrayIntDobrado = new int[ arrayInteiros.Length * 2];
-Array.Copy(arrayInteiros,arrayIntDobrado,arrayInteiros.Length);
+System.Console.WriteLine($"Itens da lista:{listaString.Count} - Capacidade{listaString.Capacity}");
 
+listaString.Add("Ba");
+System.Console.WriteLine($"Itens da lista:{listaString.Count} - Capacidade{listaString.Capacity}");
 
-//Array.Resize(ref arrayInteiros,arrayInteiros.Length *2);
+listaString.Remove("Ba");
 
-for (int contador = 0; contador < arrayInteiros.Length; contador++)
+System.Console.WriteLine($"Itens da lista:{listaString.Count} - Capacidade{listaString.Capacity}");
+
+for (int i = 0; i <listaString.Count; i++)
 {
-    Console.WriteLine($"Posicao Nº {contador} - {arrayInteiros[contador]}");
+    Console.WriteLine($"Posição{i} - {listaString[i]}");
 }
+
+
+foreach (var item in listaString)
+{
+    System.Console.WriteLine(item);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// int[] arrayInteiros = new int[3];
+// arrayInteiros[0]= 100;
+// arrayInteiros[1] = 200;
+// arrayInteiros[2]=300;
+
+
+// int[] arrayIntDobrado = new int[ arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros,arrayIntDobrado,arrayInteiros.Length);
+
+
+// //Array.Resize(ref arrayInteiros,arrayInteiros.Length *2);
+
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($"Posicao Nº {contador} - {arrayInteiros[contador]}");
+// }
 
 
 
