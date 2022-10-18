@@ -8,7 +8,11 @@ arrayInteiros[1] = 200;
 arrayInteiros[2]=300;
 
 
-Array.Resize(ref arrayInteiros,arrayInteiros.Length *2);
+int[] arrayIntDobrado = new int[ arrayInteiros.Length * 2];
+Array.Copy(arrayInteiros,arrayIntDobrado,arrayInteiros.Length);
+
+
+//Array.Resize(ref arrayInteiros,arrayInteiros.Length *2);
 
 for (int contador = 0; contador < arrayInteiros.Length; contador++)
 {
