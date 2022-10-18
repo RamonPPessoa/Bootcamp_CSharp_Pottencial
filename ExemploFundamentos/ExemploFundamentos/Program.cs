@@ -2,11 +2,21 @@
 using ExemploFundamentos.Common.Models;
 
 
+int[] arrayInteiros = new int[3];
+arrayInteiros[0]= 100;
+arrayInteiros[1] = 200;
+arrayInteiros[2]=300;
 
-Pessoa p1 = new Pessoa();
-p1.Nome="Pessoa";
-p1.Idade=43;
-p1.Apresentar();
+for (int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Posicao Nº {contador} - {arrayInteiros[contador]}");
+}
+
+
+// Pessoa p1 = new Pessoa();
+// p1.Nome="Pessoa";
+// p1.Idade=43;
+// p1.Apresentar();
 
 // int numero = 5;
 // int contadorNovo =0;
@@ -141,7 +151,7 @@ p1.Apresentar();
 // {
 //     case "a":
 //     case "e":
-//     case "i":
+//     case "contador":
 //     case "o":
 //     case "u":
 //         Console.WriteLine("É uma vogal");
