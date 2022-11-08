@@ -10,7 +10,7 @@ namespace CriandoAPI.Context
     public class AgendaContext :DbContext
 
     {
-        public AgendaContext(DbContextOptions<AgendaContext>options) : base(options)
+        public AgendaContext(DbContextOptions<AgendaContext> options) : base(options)
         {
 
         }
